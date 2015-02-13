@@ -31,11 +31,6 @@ namespace Microsoft.Data.Entity.Utilities
             return Enumerable.Empty<TEdge>();
         }
 
-        public virtual IEnumerable<TEdge> GetIncomingEdges([NotNull] TVertex to)
-        {
-            throw new NotImplementedException();
-        }
-
         public virtual void AddVertex([NotNull] TVertex vertex)
         {
             Check.NotNull(vertex, nameof(vertex));
